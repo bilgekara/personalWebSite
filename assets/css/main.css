@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+	body{
+		background-color: #000;
+		background-image: url("../../images/hakkimda/bg2.jpg");
+		background-size: cover;
+		background-position: top center;
+		color: rgba(255, 255, 255, 0.65);
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-size: 13pt;
+		font-weight: 200;
+		line-height: 1.65;
+		margin: 0;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	h3 {
+		color: #ffffff;
+		font-weight: 200;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+		font-size: 1em;
+	}
+/*thumbnails*/
+	.thumbnails {
+		display: flex;
+		margin: 0 0 2em -2em;
+	}
+
+		.thumbnails a {
+			transition: all 0.2s ease;
+			border-bottom: none;
+			display: block;
+			width: 100%;
+			margin: 0 0 2em 0;
+			text-align: center;
+			border-radius: 4px;
+			box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+			background-color: rgba(255, 255, 255, 0.075);
+			cursor: pointer;
+			outline: 0;
+			overflow: hidden;
+		}
+			.thumbnails a h3 {
+				margin: 1em;
+			}
+
+			.thumbnails a:hover {
+				background-color: rgba(255, 255, 255, 0.25);
+				box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+			}
+
+		.thumbnails > div {
+			width: calc(100% / 3);
+			padding-left: 2em;
+		}
+/* Wrapper */
+	#wrapper {
+		max-width: 68em;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 2em;
+		transition: opacity 1s ease, filter 1s ease;
+	}
+
+
+
+	
+.service-section {
+    background: #f4f4f4;
+    overflow: hidden;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+.container {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.section-title {
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    visibility: visible;
+}
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-md-3,.col-sm-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.service-item {
+    text-align: center;
+    padding: 50px 30px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(64,64,64,.1);
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #000;
+}
+
+ h2, h4{
+    line-height: 1.1;
+}
+
+h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+h4 {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.service-item p {
+    font-size: 15px;
+    line-height: 22px;
+}
+p {
+    margin-inline-start: 0px;
+    margin: 0 0 10px;
+    color: #777;
+}
+
+
+@media (min-width: 200px)
+{
+    h2{
+        text-align: center;
+    }
+    
+    .container {
+        width: 750px;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+
+	
