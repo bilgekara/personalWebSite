@@ -1,0 +1,39 @@
+/*-table-*/
+  h3 { text-decoration: underline; }
+
+  table { border: 1px dashed black; color:rgb(25, 122, 160); }
+
+  td { padding: 2px; border: 1px solid rgb(72, 170, 209); }
+
+  #baslik{ font-weight:bold; }
+
+/*-main-*/
+  h3 { text-transform: uppercase; }
+
+  h3, h4 { font-weight: bold; }
+
+  main { max-width: 1140px; }
+
+  main section:not(:last-child) { border-bottom: 1px solid #ccc; }
+
+  .yetenekler { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+  .yetenekler .sutun { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+
+  .yetenekler .sutun ul, ul.job-aciklama { list-style-type: none; }
+
+  .yetenekler .sutun ul > li:before { content: "►"; padding-right: 0.5em; color: #509e98; }
+
+  .job-baslik { text-transform: capitalize; }
+
+  .job-baslik span { color: #889499; text-decoration: underline; }
+
+  ul.job-aciklama li:before{ content: "✔";  padding-right: 0.5em; color: #509e98; }
+
+@media only screen and (max-width: 576px) {
+  .yetenekler { display: block; }
+
+  .yetenekler .sutun {  max-width: 100%; }
+}
+
+

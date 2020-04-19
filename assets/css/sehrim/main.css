@@ -1,0 +1,102 @@
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400|Passion+One:400");
+	
+*, *:before, *:after { box-sizing: border-box; }
+
+header  { height: 100vh;  background-size: cover; }   
+	header h1{margin-top: 215px; margin-left: 680px; padding-top: 15px; width: 30px;}
+		@media screen and (max-width: 1400px) {
+			header h1{margin-left: 550px; padding-top: 15px; width: 30px;}
+		}
+		@media screen and (max-width: 1000px) {
+			header h1{margin-left: 400px; padding-top: 15px; width: 30px; }
+		}
+		@media screen and (max-width: 736px) { 
+			header h1{margin-left: 300px; padding-top: 15px; width: 30px;}
+		}
+		@media screen and (max-width: 590px) { 
+			header h1{margin-left: 150px; padding-top: 15px; width: 30px;}
+		}
+	
+.button {
+	background-color: #70c7be; color: #ffffff !important;
+	border-radius: 4px;
+	display: inline-block;
+	line-height: 2.95em;
+	padding: 0 1.5em;
+}
+
+body{
+	background: #202024; color: rgba(255, 255, 255, 0.75);
+	font-family: "Source Sans Pro", sans-serif; font-size: 14pt; font-weight: 300;
+	line-height: 1.65;
+	margin:0
+}
+	
+	@media screen and (max-width: 1680px) {  body{ font-size: 11pt; } }
+	
+	@media screen and (max-width: 1280px) { body { font-size: 11pt; } }
+	
+	@media screen and (max-width: 980px) { body{ font-size: 12pt; } }
+	
+	@media screen and (max-width: 736px) { body{ font-size: 12pt; } }
+	
+	 h3{ color: #fff; font-weight: 400; line-height: 1.5; margin: 0 0 1em 0; font-size: 1.35em; }
+	
+	
+	
+	
+	
+	
+/* Kutular */
+	
+	.thumbnails {
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	
+		.thumbnails .kutucuk { margin: 0 1em 2em 1em; width: 30%; }
+	
+			@media screen and (max-width: 1280px) { .thumbnails .kutucuk { width: 45%; } }
+	
+			@media screen and (max-width: 736px) { .thumbnails .kutucuk { width: 100%; } }
+	
+	
+	
+	/* Kutucuk */
+	
+		.kutucuk {
+			border-radius: 4px;
+			margin-bottom: 2em;
+			background: #2c2c32;
+			text-align: center;
+		}
+			.kutucuk .inner { padding: 1.5em; width: 100% !important; }
+	
+	/* Resimler */
+	
+		.image {
+			border-radius: 4px;
+			border: 0;
+			display: inline-block;
+			position: relative;
+		}
+				.image.fit img { width: 100%; }
+				
+	/* Main */
+	
+		#main {
+			padding: 4em 0 2em 0;
+		}
+			#main .inner {
+				width: 90%;
+				max-width: 80em;
+				margin: 0 auto;
+			}
+				#main .inner a{ text-decoration: none;}
+	
+				
+	
+	

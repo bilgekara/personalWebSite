@@ -1,0 +1,16 @@
+div{
+    border-radius: 20px;
+    background-color: #0000008c;
+    padding: 50px 50px 50px 50px;
+    margin:50px 250px 50px 250px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#text{text-align: center;}
+    #text p{font: italic bold 19px Homemade Apple;color:rgb(48, 10, 10);}
+
+#soz{background-color: darkgrey;
+    border-radius: 13px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(48, 10, 10);
+}

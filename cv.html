@@ -2,37 +2,69 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>CV</title>
   <meta name="description" content="Eğitim bilgilerimin yer aldığı CV sayfası">
-  <meta name="author" content="Bilgenur Kara">
-  <link rel="icon" href="./images/icon/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/cv.css">
-  <link rel="stylesheet" href="header.css">
+
+  <title>CV</title>
+  
+  <link rel="icon" href="./images/icon/cv.ico">
+  <link rel="stylesheet" href="assets/css/home-cv/cv.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="assets/header.js"></script>
+  <style> header  { background-image: url('images/bg.jpg');} </style>
 </head>
 
 <body>
-
-<header>
-  <nav>
-    <div >
-       <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.html">CV</a></li>
-          <li><a href="#">Şehrim</a></li>
-          <li><a href="#">Mirasımız</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">İletişim</a></li>
-       </ul>
-    </div>
- </nav>
+<header >
+  <nav class="topnav deneme" id="myTopnav">
+    <a class="active" href="index.html">Ana Sayfa</a>
+    <a href="cv.html">CV</a>
+    <a href="sehrim.html">Şehrim</a>
+    <a href="mirasimiz.html">Mirasımız</a>
+    <a  href="login.html">Login</a>
+    <a  href="iletisim.html">İletişim</a>
+    <a  href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>   
+  </nav>
 </header>
+
+<!--table-->
+<h3>Eğitim Bilgilerim</h3>
+<table>
+  <tr id="baslik">
+    <td>Okul</td>
+    <td>Mezuniyet Derecesi</td>
+    <td>Yıl</td>
+  </tr>
+  <tr>
+    <td>Sakarya Üniversitesi</td>
+    <td>Bilgisiyar ve Bilişim Bilimleri Fakültesi</td>
+    <td>2017-present</td>
+  </tr>
+  <tr>
+    <td>Vizyon Temel Lisesi</td>
+    <td>2.likle mezun oldum</td>
+    <td>2016</td>
+  </tr>
+  <tr>
+    <td>Sakarya Anadolu Imamhatip Lisesi</td>
+    <td>İlk 3 teydim</td>
+    <td>2013-2015</td>
+  </tr>
+  <tr>
+    <td>Yücelballık OrtaOkulu</td>
+    <td>Orta okul mezunu</td>
+    <td>2013</td>
+  </tr>
+</table>
+
+<!--Main-->
   <main>
     <section>
       <h3>Yetenekler</h3>
-      <div class='skills'>
-        <div class='column'>
-          <h4>Good knowledge</h4>
+      <div class='yetenekler'>
+        <div class='sutun'>
+          <h4>Bildiğim Diller</h4>
           <ul>
             <li>HTML5</li>
             <li>JavaScript</li>
@@ -41,7 +73,7 @@
             <li>SQL</li>
           </ul>
         </div>
-        <div class='column'>
+        <div class='sutun'>
           <h4>Platformlar</h4>
           <ul>
             <li>Microsoft Visual Studio</li>
@@ -52,7 +84,7 @@
             <li>GitHub</li>
           </ul>
         </div>
-        <div class='column'>
+        <div class='sutun'>
           <h4>Kullandığım Teknolojiler</h4>
           <ul>
             <li>CSS</li>
@@ -60,11 +92,11 @@
           </ul>
         </div>
         <div>
-          <h4>Languages</h4>
+          <h4>Diller</h4>
           <p>🇬🇧 English - Intermediate A2/B1</p>
         </div>
       </div>
-      <div class='column'>
+      <div class='sutun'>
         <h4>Sertifikalar</h4>
         <ul>
           <li>Introduction to Cybersecurity(Cisco)</li>
@@ -76,43 +108,25 @@
     </section>
 
     <section>
-      <h3>Eğitim</h3>
-      <table>
-        <div class='school'>
-          <span>2017-presedent</span> <strong>Sakarya Üniversitesi 'Bilgisayar ve Bilişim Bilimleri Fakültesi'</strong>
-        </div>
-        <div class="descrition">
-           Bilgisayar Mühendisliği Bölümü 3.Sınıf
-        </div>
-      </table>
-      <table>
-        <div class='school'>
-          <span>2017</span> <strong>Sakarya Vizyon Temel Lisesi</strong>
-        </div>
-        <div>
-          Okuldan 2. likle mezun oldum.
-        </div>
-      </table>
-    </section>
-    <section>
       <h3>Deneyim</h3>
-      <table>
-        <div class='job-title'>
+      <article>
+        <div class='job-baslik'>
           <span>08.2019 - 09.2019</span> <strong>Kadıköy Belediyesi</strong><br> <strong>Pozisyon:</strong> Web developer Intern
         </div>
         <div>
           <p><strong>Öğrendiklerim:</strong> HTML5 / CSS / OOP / MVC</p>
-          <ul class="job-description">
+          <ul class="job-aciklama">
             <li>Web sitesi tasarımını öğrendim(HTML5/CSS)</li>
             <li>Nesneye yönelik programlama yı öğrendim.</li>
             <li>Katmanlı mimariyi ve şirketler de işleyişini öğrendim. </li>
           </ul>
         </div>
-      </table>
+      </article>
     </section>
   </main>
   <footer>
-    <p>Created by: <a href="images/yakisikli.jpg">@bilgeli</a>  /       <a href="https://www.linkedin.com/in/bilgenur-kara/"> LinkedIn</a> / 2020 </p>
+    <p>Created by: <a href="images/hakkimda/yakisikli.jpg">@bilgeli</a>  /       <a href="https://www.linkedin.com/in/bilgenur-kara/"> LinkedIn</a> / 2020 </p>
   </footer>
+
 </body>
 </html>
