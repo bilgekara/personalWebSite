@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<title>LOGIN</title>
+
+<link rel="stylesheet" href="assets/css/header.css">
+<link rel="stylesheet" href="assets/css/login-iletisim/login.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<style> header  { background-image: url('images/bg.jpg');} body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b5d6a;
+  height: 100vh;
+}
+#login .container  #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 320px;
+  border: 1px solid #9C9C9C;
+  background-color: #EAEAEA;
+}
+#login-form { padding: 20px;}
+</style>
+
+<script src="assets/header.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,900,900i" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  <header >
+    <nav class="topnav" id="myTopnav">
+      <a class="active" href="index.html">Ana Sayfa</a>
+      <a href="cv.html">CV</a>
+      <a href="sehrim.html">Şehrim</a>
+      <a href="mirasimiz.html">Mirasımız</a>
+      <a href="login.html">Login</a>
+      <a href="iletisim.html">İletişim</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>  
+    </nav>
+</header> 
+
+<div id="login">
+  <div class="container">
+    <div   class="row justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div id="login-box" class="col-md-12">
+          <form id="login-form" action="loginKontrol.php" method="post">
+            <h3 class="text-center text-info">Giris Yap</h3>
+            <div class="form-group">
+              <label class="text-info">Kullanici Adi:</label><br>
+              <input type="email" name="kullaniciadi" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label class="text-info">Sifre:</label><br>
+              <input type="password" name="sifre" class="form-control">
+            </div>
+                            
+            <input type="submit" name="submit" class="btn btn-info btn-md" value="Giris Yap" required>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
