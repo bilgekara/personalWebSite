@@ -1,8 +1,8 @@
 <?php 
     if(isset($_POST['kullaniciadi'])) {
-
+        $password=$_POST['sifre'];
         $username = $_POST['kullaniciadi'];
-            if($username=="b171210011@ogr.sakarya.edu.tr" || $username=="B171210011@ogr.sakarya.edu.tr") echo "Hoşgeldin B171210011". ' <br/>';
+            if($password=="123" &&($username=="b171210011@ogr.sakarya.edu.tr" || $username=="B171210011@ogr.sakarya.edu.tr")) echo "Hoşgeldin B171210011". ' <br/>';
             else header("Location: login.html");
     }
 

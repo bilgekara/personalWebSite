@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>ILETISIM</title>
+
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="assets/css/header.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,900,900i" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="assets/header.js"></script>
+
+
+<style>
+    header  { background-image: url('images/bg.jpg');}
+    label{ font-style: italic; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight:bold; }
+</style>
+
+<script type="text/javascript">
+    function kontrol(form){
+        var adi = form.adi.value;
+        var soyadi = form.soyadi.value;
+        var email = document.getElementById('email');
+        var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+        if (adi.length === 0) {
+            alert("Lutfen Adinizi Girin");
+            return false;
+        }
+      
+        if (soyadi.length === 0) {
+            alert("Lutfen soyadinizi girin");
+            return false;
+        }
+  
+        if (!filter.test(email.value)) {
+            alert('Lütfen geçerli bir e-posta adresi girin.');
+            email.focus;
+            return false;
+        }
+        return true;
+    }
+</script>
+</head>
+<body>
+    <header >
+        <nav class="topnav" id="myTopnav">
+          <a class="active" href="index.html">Ana Sayfa</a>
+          <a href="cv.html">CV</a>
+          <a href="sehrim.html">Şehrim</a>
+          <a href="mirasimiz.html">Mirasımız</a>
+          <a href="login.html">Login</a>
+          <a href="iletisim.html">İletişim</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>  
+        </nav>
+    </header> 
+
+<div class="container">
+	<form class="well span8" onsubmit="return kontrol(this);" action="iletisimBilgileri.php" method="post" formenctype="multipart/form-data">
+        <div class="row">
+            <div class="span3">
+                <label>Ad*</label> 
+                <input class="span3" placeholder= "Adiniz" type="text" name="adi"> 
+                
+                <label>Soyad*</label>
+                <input class="span3" placeholder="Soyadiniz" type="text" name="soyadi">
+                
+                <label>Email Adresi</label> 
+                <input id='email' class="span3" placeholder= "Email adresiniz" type="text" name="email" autocomplete="on"> 
+                
+                <label>Cinsiyet</label>
+                <input type="radio" name="cinsiyet" value="erkek">Erkek
+                <input type="radio" name="cinsiyet" value="kadin">Kadin <br>
+                 
+                <label>Sevdiginiz muzik turleri</label>
+                <input type="checkbox" name="muzikler[]" value="karadeniz" checked>Karadeniz Muzigi<br> 
+                <input type="checkbox" name="muzikler[]" value="yeniler">Ucuncu Yeniler<br> 
+                <input type="checkbox" name="muzikler[]" value="rock">Rock<br> 
+                <input type="checkbox" name="muzikler[]" value="protest" >Protest<br> 
+                <input type="checkbox" name="muzikler[]" value="pop">Pop<br> 
+            </div>
+    
+            
+            <div class="span5">
+                <label>Il Plaka Kodu:</label>
+                <input type="text" name="plaka" pattern=[0-9]{2}  size="50"><br>
+
+                <label>Araba secimine gore karakter analizi hadi bakaliim</label>
+                <select class="span3" name="araba">
+                    <option selected value="na"> Sec Bakalim: </option>
+                    <option value="vw"> VW golf </option>
+                    <option value="ford"> Ford focus </option>
+                    <option value="peugout"> Peugout 307 </option>
+                    <option value="Renault"> Renault megane </option>
+                    <option value="honda"> Honda </option>
+                    <option value="bmw">BMW </option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="citroen">Citroen</option>
+                    <option value="alfa"> Alfa Romeo</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="volvo">Volvo</option>
+                    <option value="skoda">Skoda</option>
+                    <option value="audi">Audi</option>
+                    <option value="hummer">Hummer</option>
+                </select>
+
+                <label>Bi el falina bakarim artikk:)</label>
+                <input type="file" name="dosya" multiple><br>
+                <label>Mesaj</label> 
+                <textarea  class="input-xlarge span5" name="message" > </textarea>
+                <button class="btn btn-primary pull-right" type= "submit">Gonder</button>
+                <button class="btn" type= "reset">Temizle</button>
+            </div>
+           
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

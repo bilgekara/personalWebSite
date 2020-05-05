@@ -1,35 +1,42 @@
 body{
     background-color: darkcyan;
 }
+    
+ul{ list-style-type: none; }
+    ul > li:before { content: "✔";  padding-right: 0.5em; color: #509e98; }
+
 #main{
     border-radius: 20px;background-color: #0000008c;
     padding: 50px 50px 50px 50px;margin:50px 250px 50px 250px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic; font-size:16px;
 }
     #main div{ padding: 30px 230px 30 200px; }
+        #main section h1 {font-size:33px;}
         #main div img{ 
-            width: 770px;height: 510px;
+            float: left;
+            width: 300px;height: 200px;
             border-color: black;border-radius: 20px;
             border-style: solid;
-            border-width: 4px;margin:37px 200px 44px 45px;
+            border-width: 4px;margin:19px 20px 44px 45px
         }
         @media screen and (max-width: 1400px) {
             #main{ padding: 50px 50px 50px 50px;  margin:50px 100px 50px 100px; }
+                #main section h1{text-align:left;font-size:25px; }
                 #main div{ float: left; padding: 30px 230px 30 200px; }
                     #main div img{ width: 300px;height: 200px; margin:19px 20px 44px 45px;} 
-            h1{text-align:left;}
         }
         @media screen and (max-width: 736px) { 
             #main{ padding: 50px 50px 50px 50px; margin:50px 100px 50px 100px; }
+            #main section h1{text-align:left;font-size:23px; }
                 #main div{ float: left;padding: 30px 230px 30 200px; }
                     #main div img{  width: 200px;height: 100px;  margin:3px 20px 44px 45px; } 
-            h1{text-align:left;}
         }
         @media screen and (max-width: 590px) { 
             #main{ padding: 50px 50px 50px 36px; margin:50px 100px 50px 100px; }
+            #main section h1{text-align:left;font-size:22px; }
                 #main div{ float: left;padding: 30px 230px 30 200px; }
                     #main div img{  width: 200px;height: 100px;  margin:3px 40px 50px 0px; } 
-            h1{text-align:left;}
 		}
 
         
